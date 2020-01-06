@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+   <!-- 
+     Here if we use the component-scan or register AutowiredAnnotationBeanPostProcessor in xml and @Autowired in class file then it will inject the dependency. 
+     In this case it don't need the setter method of departmentBean in EmployeeBean. Since the @Autowired annotation will automatically inject the dependency to the field.
+     
+     If you don't want component-scan and @Autowired annotation then we need to specify the EmployeeBean bean registration with autowire="byType" and also the corresponding EmployeeBean 
+     should have the departmentBean setter method since the byType model will use setter method of DepartmentBean to inject the dependency to EmployeeBean. 
+   -->
+   <!-- <context:component-scan base-package="com.autowire" /> -->
+   
+   <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+    
+   <bean id="employeeBean" class="com.autowire.by.field.demo.beans.EmployeeBean">
+     <property name="employeeId" value="110"/>
+     <property name="employeeName" value="Vivek.B"/>
+   </bean>   
+   
+   <bean id="departmentBean" class="com.autowire.by.field.demo.beans.DepartmentBean">
+     <property name="deptId" value="12" />
+     <property name="departmentName" value="Risk management" />
+   </bean>
+   
+   <bean id="departmentBean1" class="com.autowire.by.field.demo.beans.DepartmentBean">
+     <property name="deptId" value="15" />
+     <property name="departmentName" value="Credit risk" />
+   </bean>
+   
+     
+</beans>

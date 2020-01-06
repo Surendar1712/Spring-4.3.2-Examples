@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/cglib/cglib-3.0.jar" sourcepath="G:/Photon workspace/Libs/cglib/cglib-3.0-sources.jar"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-beans-4.3.2.RELEASE.jar" sourcepath="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-beans-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-context-4.3.2.RELEASE.jar" sourcepath="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-context-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-core-4.3.2.RELEASE.jar" sourcepath="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-core-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-expression-4.3.2.RELEASE.jar" sourcepath="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-expression-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-aop-4.3.2.RELEASE.jar" sourcepath="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-aop-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-web-4.3.2.RELEASE.jar" sourcepath="G:/Photon workspace/Libs/spring-jars/4.3.2/spring-web-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
